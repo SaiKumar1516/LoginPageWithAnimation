@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    @keyframes container {
+        from{
+            background-position: 0%;
+        }
+        to{
+            background-position: 600%;
+        }
+        
+    }
+    #container{
+        width: 300px;
+        height: 200px;
+        background-color:gray;
+        filter: blur(60px);
+        background-image: linear-gradient(90deg,violet,rgb(190, 27, 190),rgb(174, 36, 36),rgb(189, 51, 51),rgb(179, 53, 179),violet);
+        background-size: 600%;
+        background-position: 600%;
+        animation-name: container;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    #loginpage{
+        width: 320px;
+        height: 220px;
+        background-color:rgba(255, 255, 255, 0.149);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px black,-3px -3px 3px black;
+        position: absolute;  
+        /* background-image: linear-gradient(90deg,violet,rgb(190, 27, 190),rgb(174, 36, 36),rgb(189, 51, 51),rgb(179, 53, 179),violet);     
+        background-size: 800%;
+        background-position: 800%;
+        animation-name: container;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; */
+    }
+    h1{
+        color: white;
+        letter-spacing: 10px;
+        font-size: 20px;
+        text-shadow: 2px 2px 2px black;
+    }
+    .box{
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black  ;
+        color: blue;
+        border: none;
+        outline: none;
+    }
+    #button{
+        width: 160px;
+        color: white;
+        background-color: violet;
+        text-shadow: 1px 1px 1px black;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+   </style>
+</head>
+<body>
+   <div id="container">
+
+   </div> 
+   <div id="loginpage">
+    <h1>Login</h1><br>
+    <input class="box" type="email" placeholder="enter ur email"><br>
+    <input class="box" type="password" placeholder="enter ur password"><br>
+    <input class="box" id="button" type="button" value="Login">
+   </div>
+</body>
+</html>
